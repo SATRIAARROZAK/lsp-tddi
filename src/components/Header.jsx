@@ -1,33 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // <-- 1. IMPORT LINK
+// src/components/Header.jsx
+
+// 1. Ubah import dari Link menjadi NavLink
+import { NavLink, Link } from 'react-router-dom';
 import '../App.css';
+import logo from '../assets/img/logo-lsp.png'; // Pastikan path ini sesuai dengan struktur folder Anda
 
 const Header = () => (
     <header className="header">
-        <div className="top-bar">
-            {/* ... (tidak ada perubahan di sini) ... */}
-        </div>
         <nav className="main-nav">
             <div className="container">
-                {/* 2. Ganti logo menjadi Link ke halaman utama */}
-                <Link to="/" className="logo">LSP TDDI CLONE</Link>
+                <Link to="/" className="logo">
+                    <img src={logo} alt="LSP TDDI Logo" />
+                </Link>
 
-                {/* 3. Ganti semua <a> di navigasi menjadi <Link> */}
-                <ul className="nav-links">
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/about">Tentang</Link></li>
-                    <li><Link to="/tahap-sertifikasi">Tahap Sertifikasi</Link></li>
-                    <li><Link to="/skema">Skema Sertifikasi</Link></li>
-                    <li><Link to="/berita">Berita</Link></li>
-                    <li><Link to="/kontak">Kontak</Link></li>
+                <div className="nav-menu">
+                    {/* 2. Ganti semua Link di sini menjadi NavLink */}
+                    <ul className="nav-links">
+                        <li><NavLink to="/">Home</NavLink></li>
+                        <li><NavLink to="/about">Tentang</NavLink></li>
+                        <li><NavLink to="/tahap-sertifikasi">Tahap Sertifikasi</NavLink></li>
+                        <li><NavLink to="/skema">Skema Sertifikasi</NavLink></li>
+                    </ul>
+                    <ul className="nav-links">
+                        <li><NavLink to="/berita">Berita</NavLink></li>
+                        <li><NavLink to="/kontak">Kontak</NavLink></li>
+                    </ul>
+                </div>
 
-                    {/* <li><Link to="/sertifikasi">Sertifikasi</Link></li> */}
-                    {/* Tambahkan link lain sesuai kebutuhan */}
-                    {/* <li><a href="#">TUK</a></li>
-                    <li><a href="#">Download</a></li>
-                    <li><a href="#">Kontak</a></li> */}
-                </ul>
-                {/* <div className="search-icon">🔍</div> */}
+                <Link to="/kontak" className="btn-contact">
+                    Hubungi kami
+                </Link>
             </div>
         </nav>
     </header>

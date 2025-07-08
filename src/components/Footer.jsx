@@ -1,47 +1,56 @@
+// src/components/Footer.jsx
 import React from 'react';
-import '../App.css'; // Import CSS untuk styling
+import { Link } from 'react-router-dom';
+import '../App.css';
+
+// 1. Impor gambar logo dari folder assets
+import footerLogo from '../assets/img/logo-lsp.png';
 
 const Footer = () => (
-  <footer className="footer">
-    <div className="container footer-grid">
-      <div className="footer-column">
-        <h4>LSP TDDI CLONE</h4>
-        <p>Jl. Telekomunikasi No. 1, Terusan Buahbatu, Sukapura, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40257.</p>
-        <p><strong>Telepon:</strong> (+62) 812-3456-7890</p>
-        <p><strong>Email:</strong> info@lsp-tddi.com</p>
-      </div>
-      <div className="footer-column">
-        <h4>Tautan Penting</h4>
-        <ul>
-          <li><a href="#">Profil LSP</a></li>
-          <li><a href="#">Visi & Misi</a></li>
-          <li><a href="#">Skema Sertifikasi</a></li>
-          <li><a href="#">Registrasi</a></li>
-        </ul>
-      </div>
-      <div className="footer-column">
-        <h4>Layanan Kami</h4>
-        <ul>
-          <li><a href="#">Sertifikasi Drive Test</a></li>
-          <li><a href="#">Sertifikasi Jaringan</a></li>
-          <li><a href="#">Uji Kompetensi</a></li>
-          <li><a href="#">Pelatihan</a></li>
-        </ul>
-      </div>
-       <div className="footer-column">
-        <h4>Hubungi Kami</h4>
-        <form className="contact-form">
-            <input type="text" placeholder="Nama Anda" />
-            <input type="email" placeholder="Email Anda" />
-            <textarea placeholder="Pesan Anda"></textarea>
-            <button type="submit" className="btn btn-primary">Kirim</button>
-        </form>
-      </div>
-    </div>
-    <div className="copyright">
-      <p>&copy; 2025 LSP TDDI Clone. Dibuat dengan React JS. Bukan situs asli.</p>
-    </div>
-  </footer>
+    <footer className="footer">
+        <div className="container footer-grid">
+
+            {/* Kolom 1: Info Perusahaan */}
+            <div className="footer-column">
+                {/* 2. Ganti teks logo dengan gambar */}
+                <img src={footerLogo} alt="LSP TDDI Logo" className="footer-logo" />
+                <p>
+                    JL. Perumahan Griya Pratama Mas Blok D4 No.35, Desa Cikarageman Setu
+                    Bekasi, Jawa Barat 17320
+                </p>
+                <p>
+                    <strong>Telepon/Whatsapp:</strong> +62 815-1338-2480
+                </p>
+                <div className="social-icons">
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            {/* Kolom 2: Layanan */}
+            <div className="footer-column">
+                <h4>Layanan</h4>
+                <ul>
+                    <li><Link to="/tahap-sertifikasi">Tahap Sertifikasi</Link></li>
+                    <li><Link to="/skema">Skema Sertifikasi</Link></li>
+                </ul>
+            </div>
+
+            {/* Kolom 3: Subscribe */}
+            <div className="footer-column">
+                <h4>Subscribe Us</h4>
+                <p>Subscribe kami untuk mendapatkan info terkini terkait sertifikasi.</p>
+                <form className="subscribe-form">
+                    <input type="email" placeholder="Email" required />
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </div>
+        <div className="copyright">
+            <p>Copyright © LSP TDDI 2025</p>
+        </div>
+    </footer>
 );
 
 export default Footer;

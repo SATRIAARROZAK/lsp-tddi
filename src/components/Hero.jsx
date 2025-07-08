@@ -1,14 +1,30 @@
+// src/components/Hero.jsx
 import React from 'react';
 import '../App.css';
 
-const Hero = () => (
-  <section className="hero">
-    <div className="hero-content">
-      <h1>LSP Telekomunikasi Digital dan Drive Test Indonesia</h1>
-      <p>Lembaga Sertifikasi Profesi Pihak Kedua (LSP P2) yang didirikan untuk melaksanakan sertifikasi kompetensi.</p>
-      <button className="btn btn-primary">Selengkapnya</button>
-    </div>
-  </section>
-);
+// Impor gambar hero yang baru
+import cover from '../assets/img/cover-home.jpg';
 
+const Hero = () => (
+    <section className="hero">
+        <div className="hero-text-content">
+            {/* UBAH SUSUNAN TEKS DAN <br /> DI SINI */}
+            <h1>
+                Certify Your Skills,
+                <br />
+                Transform Your
+                <br />
+                Future.
+            </h1>
+            <p>
+                Dengan komitmen terhadap kualitas dan inovasi, kami menyelenggarakan
+                sertifikasi yang tidak hanya memvalidasi keahlian Anda tetapi juga
+                meningkatkan kepercayaan bagi pemberi kerja, klien, dan rekan kerja.
+            </p>
+        </div>
+        <div className="hero-image-container">
+            <img src={cover} alt="Person working on a computer" />
+        </div>
+    </section>
+);
 export default Hero;
