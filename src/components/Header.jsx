@@ -21,8 +21,6 @@ const Header = () => (
                         <li><NavLink to="/about">Tentang</NavLink></li>
                         <li><NavLink to="/tahap-sertifikasi">Tahap Sertifikasi</NavLink></li>
                         <li><NavLink to="/skema">Skema Sertifikasi</NavLink></li>
-                    </ul>
-                    <ul className="nav-links">
                         <li><NavLink to="/berita">Berita</NavLink></li>
                         <li><NavLink to="/kontak">Kontak</NavLink></li>
                     </ul>

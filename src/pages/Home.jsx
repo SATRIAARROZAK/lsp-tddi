@@ -3,15 +3,15 @@ import React from 'react';
 // import AboutSection from '../components/AboutSection';
 // import SchemesSection from '../components/SchemesSection';
 import Hero from '../components/Hero';
+import AboutSection from '../components/AboutSec';
 
 const Home = () => {
-  return (
-    <>
-      <Hero />
-      {/* <AboutSection />
-      <SchemesSection /> */}
-    </>
-  );
+    return (
+        <>
+            <Hero />
+            <AboutSection />
+        </>
+    );
 };
 
 export default Home;

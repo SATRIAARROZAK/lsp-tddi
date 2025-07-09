@@ -15,7 +15,8 @@ const Footer = () => (
                 {/* 2. Ganti teks logo dengan gambar */}
                 <img src={footerLogo} alt="LSP TDDI Logo" className="footer-logo" />
                 <p>
-                    JL. Perumahan Griya Pratama Mas Blok D4 No.35, Desa Cikarageman Setu
+                    JL. Perumahan Griya Pratama Mas Blok D4 No.35,
+                    Desa Cikarageman Setu
                     Bekasi, Jawa Barat 17320
                 </p>
                 <p>
@@ -37,9 +38,10 @@ const Footer = () => (
             </div>
 
             {/* Kolom 3: Subscribe */}
-            <div className="footer-column">
+            <div className="footer-column-subscribe">
                 <h4>Subscribe Us</h4>
-                <p>Subscribe kami untuk mendapatkan info terkini terkait sertifikasi.</p>
+                <p>Subscribe kami untuk mendapatkan 
+                    <br />info terkini terkait sertifikasi.</p>
                 <form className="subscribe-form">
                     <input type="email" placeholder="Email" required />
                     <button type="submit">Submit</button>

@@ -1,4 +1,3 @@
-// src/components/Hero.jsx
 import React from 'react';
 import '../App.css';
 
@@ -8,9 +7,10 @@ import cover from '../assets/img/cover-home.jpg';
 const Hero = () => (
     <section className="hero">
         <div className="hero-text-content">
-            {/* UBAH SUSUNAN TEKS DAN <br /> DI SINI */}
             <h1>
-                Certify Your Skills,
+                Certify Your
+                <br />
+                Skills,
                 <br />
                 Transform Your
                 <br />
@@ -27,4 +27,5 @@ const Hero = () => (
         </div>
     </section>
 );
+
 export default Hero;
