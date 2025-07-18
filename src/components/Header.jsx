@@ -1,10 +1,8 @@
 import React from 'react';
-// src/components/Header.jsx
-
 // 1. Ubah import dari Link menjadi NavLink
 import { NavLink, Link } from 'react-router-dom';
 import '../App.css';
-import logo from '../assets/img/logo-lsp.png'; // Pastikan path ini sesuai dengan struktur folder Anda
+import logo from '../assets/img/logo-lsp.png'; // Pastikan path ini sesuai
 
 const Header = () => (
     <header className="header">
@@ -15,7 +13,7 @@ const Header = () => (
                 </Link>
 
                 <div className="nav-menu">
-                    {/* 2. Ganti semua Link di sini menjadi NavLink */}
+                    {/* 2. Semua Link di sini sudah menjadi NavLink */}
                     <ul className="nav-links">
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/about">Tentang</NavLink></li>

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../App.css'; 
+import '../../App.css'; 
 
 // Import the image for the section. 
 // Make sure you have an image named 'about-section.jpg' in the 'src/assets/img/' folder.
-import sec1 from '../assets/img/sec1.jpg';
+import sec1 from '../../assets/img/sec1.jpg';
 
 const AboutSection = () => {
   return (

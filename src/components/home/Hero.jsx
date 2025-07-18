@@ -1,8 +1,8 @@
 import React from 'react';
-import '../App.css';
+import '../../App.css'; 
 
 // Impor gambar hero yang baru
-import cover from '../assets/img/cover-home.jpg';
+import cover from '../../assets/img/cover-home.jpg';
 
 const Hero = () => (
     <section className="hero">
