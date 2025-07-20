@@ -421,6 +421,31 @@
   opacity: 1;
 }
 
+/* --- CTA Banner Section --- */
+.cta-banner-section {
+  padding: 80px 0;
+  background-color: #F7F7F7; /* Match partner section background */
+}
+
+.cta-banner-section .container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.cta-banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.cta-banner-image:hover {
+  transform: scale(1.02);
+}
+
 /* --- About Page --- */
 /* Tambahkan kode ini di akhir file src/App.css */
 
