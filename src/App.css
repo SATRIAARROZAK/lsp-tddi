@@ -396,7 +396,7 @@
 /* --- Partners Section --- */
 .partners-section {
   padding: 80px 0;
-  background-color: #c5c5c5; /* Warna latar abu-abu muda */
+  background-color: #F7F7F7; /* Warna latar abu-abu muda */
 }
 
 .partners-logos {
@@ -422,6 +422,10 @@
 }
 
 /* --- About Page --- */
+/* Tambahkan kode ini di akhir file src/App.css */
+
+/* --- About Page --- */
+/* (Styling ini sebagian besar sudah ada di file Anda) */
 .about-page {
   background-color: #2c2a5a; /* Latar belakang biru tua */
   color: #ffffff; /* Warna teks putih */
@@ -450,7 +454,7 @@
 }
 
 .vision-statement strong {
-  color: #0c08ddad; /* Warna merah untuk kata yang ditebalkan */
+  color: #848EE8; /* Warna merah agar lebih kontras */
   font-weight: 600;
 }
 
@@ -462,6 +466,112 @@
   font-size: 1.1rem;
   line-height: 1.8;
   color: #e0e0e0;
+}
+
+/* --- Steps Section --- */
+.steps-section {
+  padding: 80px 0;
+  background-color: #f8f9fa; /* Warna latar belakang abu-abu sangat muda */
+}
+
+.steps-section .section-title {
+    color: #2c2a5a;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Dibuat lebih responsif */
+  gap: 40px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.step-card {
+  background-color: #ffffff;
+  padding: 40px; /* Padding seragam */
+  border-radius: 15px;
+  border: 1px solid #e9ecef; /* Garis tepi tipis */
+  text-align: left; /* Teks dan ikon rata kiri */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.step-icon img {
+  height: 60px; /* Menyamakan ukuran ikon */
+  width: auto;
+}
+
+.step-divider {
+  width: 50px;
+  height: 4px;
+  background-color: #ef4444; /* Warna merah */
+  border-radius: 2px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.step-card p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* --- License Section --- */
+.license-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.license-section .container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 5%;
+}
+
+.license-image {
+  flex: 1;
+}
+
+.license-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.license-text {
+  flex: 1.2; /* Beri lebih banyak ruang untuk teks */
+  text-align: left;
+}
+
+.license-text h2 {
+  font-size: 2.5rem;
+  color: #2c2a5a;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.license-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.license-text strong {
+  color: #2c2a5a;
+  font-weight: 600;
 }
 
 

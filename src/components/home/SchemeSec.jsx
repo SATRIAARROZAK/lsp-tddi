@@ -11,9 +11,10 @@ const SchemesSection = () => {
           {/* Card 1: Data Scientist */}
           <div className="scheme-card">
             <div className="icon-container">
-              <i className="bi bi-stars"></i>
+              <i className="bi bi-clipboard-data"></i>
             </div>
-            <h3>Data Scientist</h3>
+            <h3>Data scientist</h3>
+            <div className="scheme-divider"></div>
             <p>
               Skema ini menguji kompetensi dalam analisis data, perencanaan dan pengembangan model prediktif, dan visualisasi untuk mendukung keputusan strategis, memastikan kemampuan sesuai kebutuhan industri data modern.
             </p>
@@ -22,33 +23,36 @@ const SchemesSection = () => {
           {/* Card 2: Associate Data Scientist */}
           <div className="scheme-card">
             <div className="icon-container">
-              <i className="bi bi-person-workspace"></i>
+              <i className="bi bi-person-check"></i>
             </div>
-            <h3>Associate Data Scientist</h3>
+            <h3>Associate data scientist</h3>
+            <div className="scheme-divider"></div>
             <p>
-              Skema ini menguji kompetensi dasar dalam analisis data, machine learning, dan komunikasi data untuk mendukung pengambilan keputusan berbasis data di berbagai sektor industri.
+              Skema ini menilai dasar-dasar analisis data, pemahaman algoritma, dan visualisasi, memastikan kemampuan awal yang relevan untuk mendukung peran di bidang data science.
             </p>
           </div>
 
-          {/* Card 3: Associate Data Engineer */}
+          {/* Card 3: Data Engineer */}
           <div className="scheme-card">
             <div className="icon-container">
               <i className="bi bi-database-gear"></i>
             </div>
-            <h3>Associate Data Engineer</h3>
+            <h3>Data Engineer</h3>
+            <div className="scheme-divider"></div>
             <p>
-              Skema ini menguji kompetensi dasar dalam pemrosesan data, ETL, dan pengelolaan pipeline data untuk memastikan ketersediaan data bagi proses analitik lanjutan.
+              Skema ini menguji kemampuan dalam merancang, membangun, & mengelola infrastruktur data. Kompetensi yang diuji di antaranya terkait integrasi data, pengelolaan pipeline, & optimasi sistem untuk mendukung analisis data skala besar.
             </p>
           </div>
 
-          {/* Card 4: Data Engineer */}
+          {/* Card 4: Database Programmer */}
           <div className="scheme-card">
             <div className="icon-container">
               <i className="bi bi-code-slash"></i>
             </div>
-            <h3>Data Engineer</h3>
+            <h3>Database programmer</h3>
+            <div className="scheme-divider"></div>
             <p>
-              Skema ini menguji kompetensi lanjutan dalam membangun, mengelola, dan mengoptimalkan infrastruktur data skala besar untuk mendukung sistem analitik dan aplikasi cerdas.
+              Skema ini menguji kemampuan dalam merancang, membangun, dan mengelola sistem basis data yang mendukung integrasi aplikasi, efisiensi penyimpanan, dan akses data optimal.
             </p>
           </div>
         </div>
