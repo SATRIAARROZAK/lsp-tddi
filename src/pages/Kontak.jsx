@@ -1,11 +1,11 @@
 import React from 'react';
+import CtaSec from '../components/home/CtaSec';
 
 const Kontak = () => {
   return (
-	<div>
-	  <h1>Kontak</h1>
-	  <p>Halaman kontak.</p>
-	</div>
+	<>
+	<CtaSec />
+	</>
   );
 };
 

@@ -1,10 +1,12 @@
 import React from 'react';
+import CtaSec from '../components/home/CtaSec';
 
 const TahapSertifikasi = () => {
   return (
-	<div>
-	  {/* Tahap Sertifikasi Page */}
-	</div>
+	<>
+	<CtaSec />
+	{/* Tahap Sertifikasi page content can be added here */}
+	</>
   );
 };
 

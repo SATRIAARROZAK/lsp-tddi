@@ -10,7 +10,7 @@ const StepsSec = () => {
   return (
     <section className="steps-section">
       <div className="container">
-        <h2 className="section-title">Langkah Kami Menuju Sertifikasi Berkualitas</h2>
+        <h2 className="section-title">Langkah Kami Menuju <br />Sertifikasi Berkualitas</h2>
         <div className="steps-grid">
           
           {/* Card 1 */}

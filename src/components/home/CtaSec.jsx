@@ -1,15 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css';
-import ctaBanner from '../../assets/img/Contact.jpg';
+import ctaPeopleImage from '../../assets/img/Contact.jpg';
 
 const CtaSec = () => {
   return (
-    <section className="cta-banner-section">
-      <div className="container">
-        <Link to="/kontak">
-          <img src={ctaBanner} alt="Daftar Asesmen dan Wujudkan Sertifikasi Anda" className="cta-banner-image" />
-        </Link>
+    <section className="cta-section">
+      <div className="container cta-container">
+        <div className="cta-text">
+          <h2>Daftar Asesmen <br />dan Wujudkan <br />Sertifikasi <br />Anda!</h2>
+          <p>
+            Ambil langkah pertama menuju pengakuan profesional dan 
+            pengembangan karier. Daftar sekarang!
+          </p>
+          <Link to="/kontak" className="btn-cta">
+            Hubungi kami
+          </Link>
+        </div>
+        <div className="cta-image">
+          <img src={ctaPeopleImage} alt="Tim siap membantu asesmen" />
+        </div>
       </div>
     </section>
   );

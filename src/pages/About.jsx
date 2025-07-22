@@ -3,6 +3,7 @@ import Hero from '../components/about/Hero';
 import StepsSec from '../components/about/StepsSec';
 import LicenseSec from '../components/about/LicenseSec';
 import PartnersSection from '../components/Home/PartnerSec';
+import CtaSec from '../components/home/CtaSec';
 
 
 const About = () => {
@@ -18,6 +19,8 @@ const About = () => {
             <LicenseSec />
 			{/* Bagian 4: Partner Kami */}
 			<PartnersSection />
+			{/* Bagian 5: Call to Action */}
+			<CtaSec />	
         </>
     );
 };

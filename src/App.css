@@ -422,29 +422,76 @@
 }
 
 /* --- CTA Banner Section --- */
-.cta-banner-section {
-  padding: 80px 0;
-  background-color: #F7F7F7; /* Match partner section background */
-}
+/* --- Hapus atau ganti gaya .cta-banner-section yang lama dengan yang ini --- */
 
-.cta-banner-section .container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 5%;
-}
-
-.cta-banner-image {
-  width: 100%;
-  height: auto;
+/* --- CTA Section --- */
+.cta-section {
+  background-color: #3E468C; /* Warna latar biru tua */
+  color: #ffffff;
+ 
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  display: block;
-  transition: transform 0.3s ease;
+  overflow: hidden; /* Agar border-radius pada gambar terlihat */
+  box-shadow: 0 15px 40px rgba(44, 42, 90, 0.15);
 }
 
-.cta-banner-image:hover {
-  transform: scale(1.02);
+.cta-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0; /* Hilangkan padding default container */
+  max-width: 100%; /* Lebar penuh di dalam section */
 }
+
+.cta-text {
+  flex: 1.2; /* Beri ruang lebih untuk teks */
+  text-align: left;
+  padding: 50px 60px;
+}
+
+.cta-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.cta-text p {
+  font-size: .8rem;
+  line-height: 1;
+  margin-bottom: 30px;
+  max-width: 445px;
+  opacity: 0.9;
+}
+
+.btn-cta {
+  background-color: #ec2101; /* Warna tombol merah */
+  color: #ffffff;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: #ffffff;
+}
+
+.cta-image {
+  flex: 1;
+  align-self: stretch; /* Membuat kolom gambar setinggi section */
+}
+
+.cta-image img {
+  width: 640px;
+  height: 100%;
+  border-radius: 0 0 0 5rem; /* Hanya sudut bawah yang melengkung */
+  object-fit: cover; /* Pastikan gambar mengisi area tanpa distorsi */
+}
+
+
 
 /* --- About Page --- */
 /* Tambahkan kode ini di akhir file src/App.css */

@@ -1,10 +1,12 @@
 import React from 'react';
+import CtaSec from '../components/home/CtaSec';
 
 const Berita = () => {
   return (
-	<div>
-	  {/* Berita page content goes here */}
-	</div>
+	<>
+	<CtaSec />
+	{/* Berita page content can be added here */}
+	</>
   );
 };
 

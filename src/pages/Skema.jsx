@@ -1,10 +1,11 @@
 import React from 'react';
+import CtaSec from '../components/home/CtaSec';
 
 const Skema = () => {
   return (
-	<div>
-	  {/* Skema page content goes here */}
-	</div>
+	<>
+	<CtaSec />
+	</>
   );
 };
 
